@@ -183,7 +183,7 @@ export default function CreateLobbyModal({ onClose, onCreated }: CreateLobbyModa
             disabled={loading}
             className="w-full py-3 rounded-xl font-bold text-sm tracking-wider uppercase bg-purple-600 hover:bg-purple-500 text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]"
           >
-            {loading ? 'Lobi Oluştur' : 'Post Lobby'}
+            {loading ? 'Oluşturuluyor...' : 'Lobi Oluştur'}
           </button>
         </form>
       </div>
