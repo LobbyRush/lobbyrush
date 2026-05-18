@@ -253,7 +253,7 @@ export default function App() {
         )}
       </main>
 
-  <footer className="relative z-10 border-t border-white/5 mt-12 py-6 text-center">
+  <footer className="relative z-10 border-t border-white/5 mt-24 py-6 text-center">
   <p className="text-xs text-gray-700">
     LobbyRush &mdash; Riot Games veya Valorant ile hiçbir bağlantısı yoktur.
   </p>
