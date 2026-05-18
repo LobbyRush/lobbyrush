@@ -84,9 +84,9 @@ export default function LobbyCard({ lobby }: LobbyCardProps) {
 
         {/* Description */}
         {lobby.description && (
-          <p className="text-sm text-gray-300 leading-relaxed mb-4 line-clamp-2">
-            {lobby.description}
-          </p>
+          <p className="text-sm text-gray-300 min-h-[48px]">
+  {lobby.description || " "}
+</p>
         )}
 
         {/* Footer */}
