@@ -153,50 +153,54 @@ export default function App() {
       </div>
 
       {/* Filters */}
-      <div className="relative z-10 sticky top-0 bg-[#060608]/95 backdrop-blur-md border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex flex-col sm:flex-row gap-3">
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
-              <span className="flex-shrink-0 text-xs text-gray-400 uppercase tracking-wider font-semibold">Mod:</span>
-              <div className="flex gap-1.5">
-                {['Hepsi', ...GAME_MODES].map(mode => (
-                  <button
-                    key={mode}
-                    onClick={() => setFilterMode(mode)}
-                    className={`flex-shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${
-                      filterMode === mode
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-gray-200'
-                    }`}
-                  >
-                    {mode}
-                  </button>
-                ))}
-              </div>
-            </div>
+<div className="relative z-10 sticky top-0 bg-[#060608]/95 backdrop-blur-md border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div className="flex flex-col sm:flex-row gap-3 items-center">
 
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 sm:ml-auto">
-              <span className="flex-shrink-0 text-xs text-gray-400 uppercase tracking-wider font-semibold">Rank:</span>
-              <div className="flex gap-1.5">
-                {RANK_TIERS.map(tier => (
-                  <button
-                    key={tier}
-                    onClick={() => setFilterRank(tier)}
-                    className={`flex-shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${
-                      filterRank === tier
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-gray-200'
-                    }`}
-                  >
-                    {tier}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Mod Filter */}
+      <div className="w-full sm:w-auto">
+        <select
+          value={filterMode}
+          onChange={(e) => setFilterMode(e.target.value)}
+          className="w-full sm:w-56 rounded-xl border border-purple-500/20 bg-white/5 px-4 py-2 text-sm text-white outline-none transition-all duration-200 hover:border-purple-500/50 focus:border-purple-500"
+        >
+          {['Hepsi', ...GAME_MODES].map(mode => (
+            <option key={mode} value={mode} className="bg-[#111]">
+              {mode}
+            </option>
+          ))}
+        </select>
       </div>
 
+      {/* Rank Filter */}
+      <div className="w-full sm:w-auto">
+        <select
+          value={filterRank}
+          onChange={(e) => setFilterRank(e.target.value)}
+          className="w-full sm:w-56 rounded-xl border border-purple-500/20 bg-white/5 px-4 py-2 text-sm text-white outline-none transition-all duration-200 hover:border-purple-500/50 focus:border-purple-500"
+        >
+          {RANK_TIERS.map(rank => (
+            <option key={rank} value={rank} className="bg-[#111]">
+              {rank}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Reset Button */}
+      <button
+        onClick={() => {
+          setFilterMode('Hepsi');
+          setFilterRank('Hepsi');
+        }}
+        className="w-full sm:w-auto rounded-xl bg-purple-600/20 border border-purple-500/30 px-4 py-2 text-sm font-semibold text-purple-300 transition-all duration-200 hover:bg-purple-600/40 hover:text-white"
+      >
+        Filtreleri Temizle
+      </button>
+
+    </div>
+  </div>
+</div>
       {/* Main content */}
       <main className="relative z-10 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {loading ? (
