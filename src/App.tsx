@@ -64,7 +64,7 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
   playsInline
   className="absolute inset-0 w-full h-full object-cover opacity-25"
 >
-  <source src="/valorant.mp4" type="video/mp4" />
+  <source src="/valorant.webm" type="video/webm" />
 </video>
 
 <div className="absolute inset-0 bg-black/65 backdrop-blur-[1px]" />
