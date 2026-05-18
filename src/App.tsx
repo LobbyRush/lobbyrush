@@ -46,11 +46,12 @@ export default function App() {
     };
   }, [fetchLobbies]);
 
-  const filteredLobbies = lobbies.filter(l => {
-    const modeMatch = filterMode === 'All' || l.game_mode === filterMode;
-    const rankMatch = filterRank === 'All' || l.rank.startsWith(filterRank);
-    return modeMatch && rankMatch;
-  });
+const filteredLobbies = lobbies.filter(l => {
+  const modeMatch = filterMode === 'Hepsi' || l.game_mode === filterMode;
+  const rankMatch = filterRank === 'Hepsi' || l.rank.startsWith(filterRank);
+
+  return modeMatch && rankMatch;
+});
 
   const formatLastUpdated = () => {
     const secs = Math.floor((new Date().getTime() - lastUpdated.getTime()) / 1000);
