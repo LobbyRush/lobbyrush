@@ -19,7 +19,7 @@ export default function CreateLobbyModal({ onClose, onCreated }: CreateLobbyModa
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!rank || !gameMode || !lobbyCode.trim()) {
-      setError('Please fill in all required fields.');
+      setError('Lütfen gerekli alanları doldurun.');
       return;
     }
 
