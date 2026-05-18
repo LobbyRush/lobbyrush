@@ -262,7 +262,7 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
 
   <footer className="relative z-10 border-t border-white/5 mt-12 py-6 text-center">
   <p className="text-xs text-gray-700">
-    LobbyRush &mdash; Riot Games veya Valorant ile hiçbir bağlantısı yoktur.
+    İş Birliği & Sponsorluk: lobbyrushcontact@gmail.com
   </p>
 
   <p className="text-xs text-gray-700 mt-2">
