@@ -234,7 +234,7 @@ export default function App() {
             <div className="flex items-center justify-between mb-5">
               <p className="text-sm text-gray-500">
                 <span className="text-white font-semibold">{filteredLobbies.length}</span>{' '}
-                {filteredLobbies.length !== 1 ? 'lobbies' : 'lobby'} found
+                {filteredLobbies.length !== 1 ? 'lobi' : 'lobby'} bulundu
               </p>
               <button
                 onClick={fetchLobbies}
