@@ -82,12 +82,18 @@ export default function LobbyCard({ lobby }: LobbyCardProps) {
           </span>
         </div>
 
-        {/* Description */}
-        {lobby.description && (
-          <p className="text-sm text-gray-300 min-h-[48px]">
-  {lobby.description || " "}
-</p>
-        )}
+       {/* Description */}
+<div className="min-h-[48px] mb-4">
+  {lobby.description ? (
+    <p className="text-sm text-gray-300 leading-relaxed line-clamp-2">
+      {lobby.description}
+    </p>
+  ) : (
+    <p className="text-sm text-gray-600 italic">
+      Açıklama yok
+    </p>
+  )}
+</div>
 
         {/* Footer */}
         <div className="flex items-center justify-between gap-3 pt-3 border-t border-white/5">
