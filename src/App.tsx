@@ -93,7 +93,7 @@ export default function App() {
               <Crosshair className="w-7 h-7 text-purple-400" style={{ filter: 'drop-shadow(0 0 8px rgba(139,92,246,0.8))' }} />
               <div>
                 <span className="text-xl font-black tracking-wider text-white">
-                  LOBBY<span className="text-purple-400">RUSH</span>
+                  Lobby<span className="text-purple-400">Rush</span>
                 </span>
                 <span className="ml-2 text-[10px] font-semibold text-gray-400 uppercase tracking-widest hidden sm:inline">
                   Takımını Bul
