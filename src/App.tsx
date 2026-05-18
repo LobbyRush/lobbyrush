@@ -238,7 +238,7 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
             <div className="flex items-center justify-between mb-5">
               <p className="text-sm text-gray-500">
                 <span className="text-white font-semibold">{filteredLobbies.length}</span>{' '}
-                {filteredLobbies.length !== 1 ? 'lobi' : 'lobi'} bulundu !
+                {filteredLobbies.length !== 1 ? 'lobi' : 'lobi'} bulundu!
               </p>
               <button
                 onClick={fetchLobbies}
