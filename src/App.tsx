@@ -257,6 +257,9 @@ export default function App() {
         <p className="text-xs text-gray-700">
           LobbyRush &mdash; Riot Games veya Valorant ile hiçbir bağlantısı yoktur.
         </p>
+        <p>
+  Copyright © 2026 - Tüm Hakları Saklıdır.
+</p>
       </footer>
 
       {showCreate && (
