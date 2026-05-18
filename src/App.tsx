@@ -198,7 +198,7 @@ export default function App() {
       </div>
 
       {/* Main content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="relative z-10 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {loading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {Array.from({ length: 8 }).map((_, i) => (
@@ -253,7 +253,7 @@ export default function App() {
         )}
       </main>
 
-  <footer className="relative z-10 border-t border-white/5 mt-24 py-6 text-center">
+  <footer className="relative z-10 border-t border-white/5 mt-12 py-6 text-center">
   <p className="text-xs text-gray-700">
     LobbyRush &mdash; Riot Games veya Valorant ile hiçbir bağlantısı yoktur.
   </p>
