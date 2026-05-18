@@ -85,7 +85,10 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
       <header className="relative z-10 border-b border-white/5 bg-black/40 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-3">
+            <button
+  onClick={() => window.location.reload()}
+  className="flex items-center gap-3 transition-opacity hover:opacity-80"
+>
               <Crosshair className="w-7 h-7 text-purple-400" style={{ filter: 'drop-shadow(0 0 8px rgba(139,92,246,0.8))' }} />
               <div>
                 <span className="text-xl font-black tracking-wider text-white">
@@ -95,7 +98,7 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
                   Takımını Bul
                 </span>
               </div>
-            </div>
+            </button>
 
             <div className="flex items-center gap-3">
               <div className="hidden sm:flex items-center gap-1.5 text-xs text-gray-500 bg-white/5 rounded-full px-3 py-1.5">
