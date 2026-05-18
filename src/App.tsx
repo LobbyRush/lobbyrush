@@ -190,9 +190,13 @@ export default function App() {
       {/* Reset Button */}
       <button
         onClick={() => {
-          setFilterMode('Hepsi');
-          setFilterRank('Hepsi');
-        }}
+  setFilterMode('Hepsi');
+  setFilterRank('Hepsi');
+
+  setTimeout(() => {
+    window.location.reload();
+  }, 100);
+}}
         className="w-full sm:w-auto rounded-xl bg-purple-600/25 border border-purple-500/40 px-4 py-2.5 text-sm font-black tracking-wide text-purple-200 transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.15)] hover:bg-purple-600/45 hover:text-white hover:border-purple-400"
       >
         Filtreleri Temizle
