@@ -161,10 +161,10 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
           className="w-full sm:w-56 rounded-xl border border-purple-500/30 bg-black/70 px-4 py-3 text-sm font-bold tracking-wide text-purple-100 outline-none transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.12)] hover:border-purple-400/70 hover:bg-purple-950/30 focus:border-purple-400"
         >
           {['Hepsi', ...GAME_MODES].map(mode => (
-            <option key={mode} value={mode} className="bg-[#0b0714] text-purple-100 font-semibold">
-              {mode}
-            </option>
-          ))}
+  <option key={mode} value={mode} className="bg-[#0b0714] text-purple-100 font-semibold">
+    {mode === 'Hepsi' ? 'MOD' : mode}
+  </option>
+))}
         </select>
       </div>
 
@@ -176,10 +176,10 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
           className="w-full sm:w-56 rounded-xl border border-purple-500/30 bg-black/70 px-4 py-3 text-sm font-bold tracking-wide text-purple-100 outline-none transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.12)] hover:border-purple-400/70 hover:bg-purple-950/30 focus:border-purple-400"
         >
           {RANK_TIERS.map(rank => (
-            <option key={rank} value={rank} className="bg-[#0b0714] text-purple-100 font-semibold">
-              {rank}
-            </option>
-          ))}
+  <option key={rank} value={rank} className="bg-[#0b0714] text-purple-100 font-semibold">
+    {rank === 'Hepsi' ? 'RANK' : rank}
+  </option>
+))}
         </select>
       </div>
 
