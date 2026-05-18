@@ -155,14 +155,14 @@ export default function App() {
       {/* Filters */}
 <div className="relative z-10 sticky top-0 bg-[#060608]/95 backdrop-blur-md border-b border-white/5">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <div className="flex flex-col sm:flex-row gap-3 items-center">
+    <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
 
       {/* Mod Filter */}
       <div className="w-full sm:w-auto">
         <select
           value={filterMode}
           onChange={(e) => setFilterMode(e.target.value)}
-          className="w-full sm:w-56 rounded-xl border border-purple-500/20 bg-white/5 px-4 py-2 text-sm text-white outline-none transition-all duration-200 hover:border-purple-500/50 focus:border-purple-500"
+          className="w-full sm:w-56 rounded-xl border border-purple-500/30 bg-black/70 px-4 py-2.5 text-sm font-bold tracking-wide text-purple-100 outline-none transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.12)] hover:border-purple-400/70 hover:bg-purple-950/30 focus:border-purple-400"
         >
           {['Hepsi', ...GAME_MODES].map(mode => (
             <option key={mode} value={mode} className="bg-[#111]">
@@ -177,7 +177,7 @@ export default function App() {
         <select
           value={filterRank}
           onChange={(e) => setFilterRank(e.target.value)}
-          className="w-full sm:w-56 rounded-xl border border-purple-500/20 bg-white/5 px-4 py-2 text-sm text-white outline-none transition-all duration-200 hover:border-purple-500/50 focus:border-purple-500"
+          className="w-full sm:w-56 rounded-xl border border-purple-500/30 bg-black/70 px-4 py-2.5 text-sm font-bold tracking-wide text-purple-100 outline-none transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.12)] hover:border-purple-400/70 hover:bg-purple-950/30 focus:border-purple-400"
         >
           {RANK_TIERS.map(rank => (
             <option key={rank} value={rank} className="bg-[#111]">
@@ -193,7 +193,7 @@ export default function App() {
           setFilterMode('Hepsi');
           setFilterRank('Hepsi');
         }}
-        className="w-full sm:w-auto rounded-xl bg-purple-600/20 border border-purple-500/30 px-4 py-2 text-sm font-semibold text-purple-300 transition-all duration-200 hover:bg-purple-600/40 hover:text-white"
+        className="w-full sm:w-auto rounded-xl bg-purple-600/25 border border-purple-500/40 px-4 py-2.5 text-sm font-black tracking-wide text-purple-200 transition-all duration-200 shadow-[0_0_18px_rgba(139,92,246,0.15)] hover:bg-purple-600/45 hover:text-white hover:border-purple-400"
       >
         Filtreleri Temizle
       </button>
