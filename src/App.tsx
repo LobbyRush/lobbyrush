@@ -220,7 +220,7 @@ const filteredLobbies = lobbies.filter(l => { const modeMatch = filterMode === '
             <div className="p-6 rounded-2xl bg-purple-600/10 border border-purple-500/20 mb-6">
               <Crosshair className="w-12 h-12 text-purple-400 opacity-50" />
             </div>
-            <h3 className="text-xl font-bold text-gray-300 mb-2">Aktif lobi bulunamadı !</h3>
+            <h3 className="text-xl font-bold text-gray-300 mb-2">Aktif lobi bulunamadı!</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
               {lobbies.length === 0
                 ? 'İlk lobiyi oluşturan sen ol ve takımını bul.'
